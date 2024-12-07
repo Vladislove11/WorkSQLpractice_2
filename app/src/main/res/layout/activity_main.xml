@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/titleToolbar"
+            android:gravity="center"/>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/nameProductET"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="@string/nameProductET"/>
+            <EditText
+                android:id="@+id/weightProductET"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="@string/weightProductET"/>
+            <EditText
+                android:id="@+id/priceProductET"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="@string/priceProductET"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/saveBTN"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="@string/saveBTN"/>
+            <Button
+                android:id="@+id/updateBTN"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="@string/updateBTN"/>
+            <Button
+                android:id="@+id/deleteBTN"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="@string/deleteBTN"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listViewLW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>

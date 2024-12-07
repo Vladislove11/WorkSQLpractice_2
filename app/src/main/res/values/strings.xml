@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WorkSQLpractice_2</string>
+    <string name="titleToolbar">Потребительская корзина</string>
+    <string name="nameProductET">Название продукта</string>
+    <string name="weightProductET">Вес продукта</string>
+    <string name="priceProductET">Цена продукта</string>
+    <string name="saveBTN">Сохранить</string>
+    <string name="updateBTN">Изменить</string>
+    <string name="deleteBTN">Удалить</string>
+    <string name="updateIdETDialog">Введите id</string>
+    <string name="updateNameETDialog">Введите название</string>
+    <string name="updatePriceETDialog">Введите цену</string>
+    <string name="deleteIdETDialog">Введите Id</string>
+    <string name="updateWeightETDialog">Введите вес</string>
+    <string name="exit">Exit</string>
+</resources>
